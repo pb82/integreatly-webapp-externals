@@ -5,6 +5,7 @@
   "bin": {
     "iad": "./bin/iad.js"
   },
+  "files": ["*", "../integreatly-asciidoc-node/dist/bundle.node.js"],
   "license": "Apache-2.0",
   "main": "lib/integreatly-asciidoc-bin.js",
   "scripts": {},
