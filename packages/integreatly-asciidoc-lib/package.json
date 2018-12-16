@@ -1,10 +1,9 @@
 {
   "name": "integreatly-asciidoc-lib",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Integreatly Flavoured Asciidoc Library",
   "license": "Apache-2.0",
   "main": "lib/integreatly-asciidoc.js",
-  "scripts": {
-  }
+  "scripts": {}
 }

@@ -1,6 +1,6 @@
 {
   "name": "integreatly-asciidoc-bin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Integreatly Flavoured Asciidoc CLI",
   "bin": {
     "iad": "./bin/iad.js"
