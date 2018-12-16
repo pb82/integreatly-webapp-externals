@@ -1,4 +1,4 @@
-const { check } = require('../../integreatly-asciidoc-node/dist/bundle.node');
+const { check } = require('integreatly-asciidoc-node');
 const { readFile } = require('fs');
 const { verifyDirectoryStructure, Collector } = require('./utils');
 const program = require('commander');

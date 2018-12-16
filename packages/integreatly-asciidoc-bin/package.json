@@ -5,13 +5,13 @@
   "bin": {
     "iad": "./bin/iad.js"
   },
-  "files": ["*", "../integreatly-asciidoc-node/dist/bundle.node.js"],
   "license": "Apache-2.0",
   "main": "lib/integreatly-asciidoc-bin.js",
   "scripts": {},
   "dependencies": {
     "ajv": "^6.6.1",
     "async.queue": "^0.5.2",
-    "commander": "^2.19.0"
+    "commander": "^2.19.0",
+    "integreatly-asciidoc-node": "../integreatly-asciidoc-node"
   }
 }
