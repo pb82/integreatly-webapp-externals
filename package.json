@@ -6,6 +6,10 @@
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2"
   },
+  "scripts": {
+    "lerna:bootstrap": "lerna bootstrap",
+    "lerna:build": "lerna run build"
+  },
   "dependencies": {
     "asciidoctor.js": "^1.5.9"
   }
