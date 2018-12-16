@@ -1,9 +1,11 @@
 {
-  "name": "integreatly-asciidoc-node",
+  "name": "integreatly-asciidoc-web",
   "version": "1.0.0",
   "license": "Apache-2.0",
-  "main": "dist/bundle.node.js",
+  "main": "dist/bundle.web.js",
   "scripts": {
     "build": "webpack"
+  },
+  "dependencies": {
   }
 }

@@ -1,4 +1,4 @@
-import { generate } from '../../integreatly-asciidoc';
+import { generate } from '../../integreatly-asciidoc-lib';
 import Asciidoctor from 'asciidoctor.js';
 
 const asciidoctor = Asciidoctor();

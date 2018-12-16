@@ -1,11 +1,9 @@
 # `integreatly-asciidoc-bin`
 
-Integreatly Flavoured Asciidoc 
+Integreatly Flavoured Asciidoc CLI to validate Asciidoc Walkthroughs. 
 
 ## Usage
 
-```
-const integreatlyAsciidocBin = require('integreatly-asciidoc-bin');
-
-// TODO: DEMONSTRATE API
+```sh
+$ iad -W error -d /path/to/walkthroughs
 ```
