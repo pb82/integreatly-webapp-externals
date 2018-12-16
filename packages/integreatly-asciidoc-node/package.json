@@ -1,0 +1,12 @@
+{
+  "name": "integreatly-asciidoc-node",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "main": "dist/bundle.node.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "asciidoctor.js": "^1.5.9"
+  }
+}

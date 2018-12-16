@@ -1,0 +1,16 @@
+{
+  "name": "integreatly-asciidoc-bin",
+  "version": "1.0.0",
+  "description": "Integreatly Flavoured Asciidoc CLI",
+  "bin": {
+    "iad": "./bin/iad.js"
+  },
+  "license": "Apache-2.0",
+  "main": "lib/integreatly-asciidoc-bin.js",
+  "scripts": {},
+  "dependencies": {
+    "ajv": "^6.6.1",
+    "async.queue": "^0.5.2",
+    "commander": "^2.19.0"
+  }
+}

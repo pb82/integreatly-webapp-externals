@@ -1,7 +1,7 @@
-import { Walkthrough } from './src/walkthrough';
+import Walkthrough from './src/types';
 
-function generate () {
-  return null;
+function generate (parsedAsciidoc) {
+  return Walkthrough.fromAdoc(parsedAsciidoc);
 }
 
 export { generate };
