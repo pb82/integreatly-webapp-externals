@@ -6,10 +6,11 @@ const asciidoctor = Asciidoctor();
 /**
  * Parses raw Asciidoc and returns an Integreatly Walkthrough
  * @param rawAsciidoc Raw Asciidoc string
+ * @param attributes Injected adoc attributes
  * @returns {object} Walkthrough
  */
-function parse(rawAsciidoc) {
-    const adoc = asciidoctor.load(rawAsciidoc);
+function parse(rawAsciidoc, attributes) {
+    const adoc = asciidoctor.load(rawAsciidoc, { attributes });
     return generate(adoc);
 }
 
