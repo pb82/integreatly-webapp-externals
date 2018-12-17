@@ -2,3 +2,5 @@
 # yarn lockfile v1
 
 
+integreatly-asciidoc-lib@../integreatly-asciidoc-lib:
+  version "1.0.1"
