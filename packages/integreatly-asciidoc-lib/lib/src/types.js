@@ -318,17 +318,19 @@ class Task {
 }
 
 class Walkthrough {
-    constructor(title, preamble, time, tasks, resources) {
+    constructor(title, preamble, time, tasks, resources, teaser) {
         this._title = title;
         this._preamble = preamble;
         this._time = time;
         this._tasks = tasks;
         this._resources = resources;
+        this._teaser = teaser;
     }
 
     verify(messages) {
         if (!this.title) pushError(messages, 'Title missing', '<walkthrough>');
         if (!this.preamble) pushError(messages, `Preamble missing`, this.title);
+        if (!this.teaser) pushError(messages, `Teaser missing`, this.title);
         if (!this.time || this.time === 0) pushError(messages, `No time defined`, this.title);
         if (!this.tasks || this.tasks.length === 0)
             pushError(messages, `No tasks defined`, this.title);
@@ -360,6 +362,10 @@ class Walkthrough {
         return this._resources;
     }
 
+    get teaser() {
+        return this._teaser;
+    }
+
     // Walkthrough resources are always defined at preamble level
     static collectWalkthroughResources(preamble) {
         const resources = [];
@@ -374,6 +380,13 @@ class Walkthrough {
         return resources;
     }
 
+    static readTeaser(preamble) {
+        if (preamble && preamble.blocks.length > 0) {
+            return preamble.blocks[0].lines[0];
+        }
+        return '';
+    }
+
     static fromAdoc(adoc) {
         const title = adoc.getDocumentTitle();
         if (adoc.blocks.length < 1) {
@@ -383,7 +396,8 @@ class Walkthrough {
         const preamble = adoc.blocks[0].convert();
         const tasks = adoc.blocks.filter(b => Task.canConvert(b)).map(b => Task.fromAdoc(b));
         const time = tasks.reduce((acc, t) => acc + t._time || 0, 0);
-        return new Walkthrough(title, preamble, time, tasks, resources);
+        const teaser = this.readTeaser(adoc.blocks[0]);
+        return new Walkthrough(title, preamble, time, tasks, resources, teaser);
 
     }
 }

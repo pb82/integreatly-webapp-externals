@@ -1,11 +1,10 @@
-# `integreatly-asciidoc-web`
+# `integreatly-asciidoc-node`
 
-> TODO: description
+Turns the `integreatly-asciidoc` library into a browser compatible package.
 
 ## Usage
 
 ```
-const integreatlyAsciidocWeb = require('integreatly-asciidoc-web');
-
-// TODO: DEMONSTRATE API
+import { check } = from 'integreatly-asciidoc-node';
+const valid = check('raw adoc string');
 ```

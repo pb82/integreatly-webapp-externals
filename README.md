@@ -20,3 +20,8 @@ This will create the `iad` binary as well as the `web` and `node` libraries.
 1. *integreatly-asciidoc-node* Node bindings for `integreatly-asciidoc-lib`.
 1. *integreatly-asciidoc-web* Browser bindings for `integreatly-asciidoc-lib`.
 1. *integreatly-asciidoc-bin* Contains the `iad` binary to check and verify the Asciidoc. Useful for continuous integration.
+
+## Releasing
+
+1. Make sure all changes are commited
+1. Run `lerna publish`
