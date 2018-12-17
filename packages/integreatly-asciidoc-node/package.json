@@ -1,6 +1,6 @@
 {
   "name": "integreatly-asciidoc-node",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "Apache-2.0",
   "main": "dist/bundle.node.js",
   "scripts": {
