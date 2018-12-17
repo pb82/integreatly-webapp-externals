@@ -402,4 +402,14 @@ class Walkthrough {
     }
 }
 
-export default Walkthrough;
+export {
+    Walkthrough,
+    Task,
+    Procedure,
+    Verification,
+    VerificationFail,
+    VerificationSuccess,
+    Paragraph,
+    TaskResource,
+    WalkthroughResource
+};
