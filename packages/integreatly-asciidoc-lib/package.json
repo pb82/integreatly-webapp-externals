@@ -1,6 +1,5 @@
 {
   "name": "integreatly-asciidoc-lib",
-  "private": true,
   "version": "1.0.3",
   "description": "Integreatly Flavoured Asciidoc Library",
   "license": "Apache-2.0",
