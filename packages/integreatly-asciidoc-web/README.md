@@ -1,4 +1,4 @@
-# `integreatly-asciidoc-node`
+# `integreatly-asciidoc-web`
 
 Turns the `integreatly-asciidoc` library into a browser compatible package.
 
